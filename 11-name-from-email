@@ -1,0 +1,12 @@
+public String nameFromEmail(String email) {
+    Integer a, b;
+    for(Integer i=0; i<email.length(); i++){
+        if(email.substring(i, i+1) == '.') a = i;
+        if(email.substring(i, i+1) == '@') {b = i; break;}
+    }
+    return email.substring(0,1).toUpperCase() + 
+            email.substring(1,a).toLowerCase() +
+            ' ' + 
+            email.substring(a+1,a+2).toUpperCase() +
+            email.substring(a+2,b).toLowerCase();
+}
