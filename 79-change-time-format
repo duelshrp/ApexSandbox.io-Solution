@@ -1,0 +1,11 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    Integer hrInt = Integer.valueof(strTime.substring(0,2));
+    String min = strTime.substring(2,5);
+    String amORpm = ' AM';
+    if(Integer.valueof(hrInt/12) == 1) amORpm = ' PM';
+    String hrStr = String.valueof(Math.mod(hrInt,12));
+    if(Math.mod(hrInt,12) == 0) hrStr = '12';
+    if(hrStr.length() == 1) hrStr = '0' + hrStr;
+    return hrStr + min + amORpm;
+}
