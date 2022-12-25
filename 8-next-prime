@@ -1,0 +1,17 @@
+public Integer nextPrime(Integer num) {
+    Integer i = num+1;
+    if(num < 0) return 2;
+    while(!isPrime(i)){
+        i++;
+    }
+    return i;
+}
+
+private Boolean isPrime(Integer num) {
+    if(num == 1 || num ==2) return true;
+    Double sqrt = Math.ceil(Math.sqrt(num));
+    for(Integer i=2; i<=sqrt; i++){
+        if(Math.mod(num, i)==0) return false;
+    }
+    return true;
+}
