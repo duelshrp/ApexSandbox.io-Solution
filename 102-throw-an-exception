@@ -6,16 +6,19 @@ public List<Account> checkAccounts(List<Account> accounts)
         e.setMessage('accounts should not be null');
         throw e;
     }
-    try{
-        for(Account acc : accounts){
-            if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
-        }
-        //return accounts;
+    for(Account acc : accounts){
+        if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
     }
-    catch(IllegalArgumentException e){
-        e.setMessage('accounts should not be null');
-        throw e;
-    }
+    // try{
+    //     for(Account acc : accounts){
+    //         if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
+    //     }
+    //     //return accounts;
+    // }
+    // catch(IllegalArgumentException e){
+    //     e.setMessage('accounts should not be null');
+    //     throw e;
+    // }
     return accounts;
 }
 
