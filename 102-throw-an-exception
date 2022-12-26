@@ -1,6 +1,11 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here 
+    if(accounts == null){
+        Exception e = new IllegalArgumentException();
+        e.setMessage('accounts should not be null');
+        throw e;
+    }
     try{
         for(Account acc : accounts){
             if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
