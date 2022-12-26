@@ -5,6 +5,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         for(Account acc : accounts){
             if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
         }
+        break;
     }
     catch(Exception e){
         throw new IllegalArgumentException('accounts should not be null',e);
