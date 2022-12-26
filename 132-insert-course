@@ -6,8 +6,6 @@ public Id insertCourse(String name, String details, Integer credits) {
 
         apxio__Course__c apCou = new apxio__Course__c();
 
-        
-
         apCou.Name = name;
 
         apCou.apxio__Course_Details__c = details;
