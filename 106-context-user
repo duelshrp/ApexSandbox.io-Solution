@@ -2,7 +2,7 @@ public Map<String,String> getContextUserInformation(){
     Map<String, String> infoMap = new Map<String, String>();
     infoMap.put('EmailId', String.valueOf(UserInfo.getUserEmail()));
     infoMap.put('ProfileId', UserInfo.getProfileId());
-    infoMap.put('Type', UserInfo.getUserEmail());
+    infoMap.put('Type', UserInfo.getUserType());
     infoMap.put('UserName', UserInfo.getUserName());
     return infoMap;
 }
