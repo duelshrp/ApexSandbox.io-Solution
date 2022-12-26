@@ -24,9 +24,9 @@ Public Class AccWrapper implements Comparable{
     Public Integer compareTo(Object compAcc){
         AccWrapper compToAcc = (AccWrapper)compAcc;
         Integer returnInt =0;
-        if(acc.AnnualRevenue == compToAcc.acc.AnnualRevenue) returnInt =0;
-        else if(acc.AnnualRevenue < compToAcc.acc.AnnualRevenue) returnInt =-1;
-        else if(acc.AnnualRevenue > compToAcc.acc.AnnualRevenue) returnInt = 1;
+        if((acc.AnnualRevenue == compToAcc.acc.AnnualRevenue) || (acc.AnnualRevenue ==null && compToAcc.acc.AnnualRevenue==null)) returnInt =0;
+        else if((acc.AnnualRevenue < compToAcc.acc.AnnualRevenue) || (acc.AnnualRevenue ==null && compToAcc.acc.AnnualRevenue != null)) returnInt =-1;
+        else if((acc.AnnualRevenue > compToAcc.acc.AnnualRevenue) || (acc.AnnualRevenue !=null && compToAcc.acc.AnnualRevenue == null)) returnInt = 1;
         return returnInt;
     }
 }
