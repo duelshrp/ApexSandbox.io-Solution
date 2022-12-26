@@ -3,7 +3,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     // code here 
     try{
         for(Account acc : accounts){
-            if(acc.BillingCity == null) throw new AccountExcrption()
+            if(acc.BillingCity == null) throw new AccountExcrption();
         }
         return accounts;
     }
