@@ -1,6 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
     List<AccWrapper> accWrapperList = new List<AccWrapper>();
-    for(Accounts acc : accounts){
+    for(Account acc : accounts){
         accWrapperList.add(new AccWrapper(acc));
     }
     accWrapperList.sort();
