@@ -5,10 +5,10 @@ public List<Account> checkAccounts(List<Account> accounts)
         for(Account acc : accounts){
             if(acc.BillingCity == null) throw new AccountException();
         }
-        return accounts;
     }
     catch(IllegalArgumentException eA){
     }
+    return accounts;
 }
 
 //do not remove the following custom-defined exception
