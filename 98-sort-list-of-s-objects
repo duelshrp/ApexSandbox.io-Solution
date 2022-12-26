@@ -1,5 +1,5 @@
 public List<Account> getAccounts(List<Account> accounts) {
-    List<AccWrapper> accWrapperList =- new List<AccWrapper>();
+    List<AccWrapper> accWrapperList = new List<AccWrapper>();
     for(Accounts acc : accounts){
         accWrapperList.add(new AccWrapper(acc));
     }
