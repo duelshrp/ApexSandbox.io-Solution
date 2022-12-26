@@ -2,10 +2,10 @@ public String registerStudent(String name, String phone, String email) {
     // code here
     apxio__Student__c student = new apxio__Student__c(
         Name = name,
-        apxio__Phone__c = Integer.valueOf(phone),
+        apxio__Phone__c = phone,
         apxio__Email__c = email
     );
     insert student;
-    List<apxio__Student__c> stu = [select Id, apxio__Registration_Number__c from apxio__Student__c where id =student.id limit 1];
-    return String.valueOf(stu.get(0).apxio__Registration_Number__c);
+apxio__Student__c stu = [select Id, apxio__Registration_Number__c from apxio__Student__c where id =student.id limit 1];
+    return String.valueOf(stu.apxio__Registration_Number__c);
 }
