@@ -7,6 +7,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         }
     }
     catch(IllegalArgumentException eA){
+        throw new IllegalArgumentException(eA);
     }
     return accounts;
 }
