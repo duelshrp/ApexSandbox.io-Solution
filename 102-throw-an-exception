@@ -8,7 +8,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         //return accounts;
     }
     catch(Exception e){
-        if(e.getTypeName == 'IllegalArgumentException') throw new IllegalArgumentException('accounts should not be null',e);
+        if(e.getTypeName.equal('IllegalArgumentException')) throw new IllegalArgumentException('accounts should not be null',e);
     }
     return accounts;
 }
