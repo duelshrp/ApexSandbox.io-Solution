@@ -1,6 +1,7 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here 
+    if(accounts == null) throw new IllegalArgumentException();
     try{
         for(Account acc : accounts){
             if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
