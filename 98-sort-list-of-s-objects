@@ -1,0 +1,23 @@
+public List<Account> getAccounts(List<Account> accounts) {
+    return accounts.sort();
+}
+// write extra class here 
+Public Class AccWrapper implements Comparable{
+    public Account acc;
+    public AccWrapper(Account acc){
+        if(acc == null){
+            Exception e = new NullPointerException();
+            e.setMessage('Account argument cannot be null');
+            throw e;
+        }
+    }
+
+    Public Integer compareTo(Object compAcc){
+        AccWrapper compToAcc = (AccWrapper)copAcc;
+        Integer returnInt =0;
+        if(acc.AnnualRevenue == compToAcc.AnnualRevenue) returnInt =0;
+        else if(acc.AnnualRevenue < compToAcc.AnnualRevenue) returnInt =-1;
+        else if(acc.AnnualRevenue > compToAcc.AnnualRevenue) returnInt = 1;
+        return returnInt;
+    }
+}
