@@ -3,10 +3,10 @@ public List<Account> checkAccounts(List<Account> accounts)
     // code here 
     try{
         for(Account acc : accounts){
-            if(acc.BillingCity == null) {throw new AccountException('Invalid BillingCity');break;}
+            if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
         }
     }
-    catch(Exception eA){
+    catch(IllegalArgumentException eA){
         throw new IllegalArgumentException('accounts should not be null',eA);
     }
     return accounts;
