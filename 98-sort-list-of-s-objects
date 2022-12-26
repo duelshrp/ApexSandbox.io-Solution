@@ -13,13 +13,14 @@ public List<Account> getAccounts(List<Account> accounts) {
 // write extra class here 
 Public Class AccWrapper implements Comparable{
     public Account acc;
-    public AccWrapper(Account acc){
-        if(acc == null){
+    //constructor
+    public AccWrapper(Account ac){
+        if(ac == null){
             Exception e = new NullPointerException();
             e.setMessage('Account argument cannot be null');
             throw e;
         }
-        this.acc = acc;
+        acc = ac;
     }
 
     Public Integer compareTo(Object compAcc){
