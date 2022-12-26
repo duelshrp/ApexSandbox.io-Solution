@@ -1,0 +1,11 @@
+public String divide(Integer a, Integer b){
+    //code here
+    String ans;
+    try{
+        ans=String.valueOf(a/b);
+    }
+    catch(Exception e){
+        ans = e.getMessage();
+    }
+    return ans;
+}
