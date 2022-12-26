@@ -13,7 +13,7 @@ Public Class AccWrapper implements Comparable{
     }
 
     Public Integer compareTo(Object compAcc){
-        AccWrapper compToAcc = (AccWrapper)copAcc;
+        AccWrapper compToAcc = (AccWrapper)compAcc;
         Integer returnInt =0;
         if(acc.AnnualRevenue == compToAcc.acc.AnnualRevenue) returnInt =0;
         else if(acc.AnnualRevenue < compToAcc.acc.AnnualRevenue) returnInt =-1;
