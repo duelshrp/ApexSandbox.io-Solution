@@ -1,7 +1,6 @@
 public List<Account> checkAccounts(List<Account> accounts)
 {
     // code here 
-    if(accounts == null) {throw IllegalArgumentException();}
     try{
         for(Account acc : accounts){
             if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
@@ -15,3 +14,4 @@ public List<Account> checkAccounts(List<Account> accounts)
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {}
+public class IllegalArgumentException extends Exception {}
