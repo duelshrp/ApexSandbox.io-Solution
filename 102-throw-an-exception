@@ -6,12 +6,12 @@ public List<Account> checkAccounts(List<Account> accounts)
             if(acc.BillingCity == null) throw new AccountException('Invalid BillingCity');
         }
     }
-    catch(IllegalArgumentException eA){
-        throw new IllegalArgumentException('accounts should not be null',eA);
+    catch(IllegalArgumentException e){
+        throw new IllegalArgumentException('accounts should not be null',e);
     }
     return accounts;
 }
 
 //do not remove the following custom-defined exception
 public class AccountException extends Exception {}
-public class IllegalArgumentException extends Exception {}
+//public class IllegalArgumentException extends Exception {}
