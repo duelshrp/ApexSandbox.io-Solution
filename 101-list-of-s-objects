@@ -8,7 +8,7 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
         }
     }
     if(contacts != null){
-        for(Contact con : accounts){
+        for(Contact con : contacts){
             lst.add(con);
         }
     }
