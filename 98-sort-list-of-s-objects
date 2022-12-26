@@ -19,6 +19,7 @@ Public Class AccWrapper implements Comparable{
             e.setMessage('Account argument cannot be null');
             throw e;
         }
+        this.acc = acc;
     }
 
     Public Integer compareTo(Object compAcc){
