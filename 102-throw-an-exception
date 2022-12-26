@@ -8,7 +8,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         }
     }
     catch(IllegalArgumentException eA){
-        throw IllegalArgumentException('accounts should not be null');
+        throw new IllegalArgumentException('accounts should not be null');
     }
     return accounts;
 }
