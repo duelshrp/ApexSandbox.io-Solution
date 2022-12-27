@@ -1,0 +1,9 @@
+public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
+    // code here
+     List<apxio__Student__c> unRechaStud 
+    = [ select Id, Name from apxio__Student__c 
+        where apxio__Active__c = true and (apxio__Phone__c = null or apxio__Email__c = null)
+        ];
+    unRechaStud.sort();
+    return unRechaStud;
+}
