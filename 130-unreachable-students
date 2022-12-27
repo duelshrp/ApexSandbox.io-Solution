@@ -4,5 +4,6 @@ public List<apxio__Student__c> selectUnreachableStudents() {
     = [ select Id, Name from apxio__Student__c 
         where apxio__Active__c = true and apxio__Phone__c = null and apxio__Email__c = null
         ];
+    unRechaStud.sort();
     return unRechaStud;
 }
