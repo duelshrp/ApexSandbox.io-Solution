@@ -6,6 +6,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
             Name = studentNames.get(i),
             apxio__Email__c = studentEmails.get(i)
         );
+        students.add(stu);
     }
     insert students;
 }
