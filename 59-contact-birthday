@@ -1,4 +1,4 @@
 public Boolean isBirthday(Contact c) {
     //code here
-    return (c.Birthdate == today());
+    return (c.Birthdate == System.today());
 }
