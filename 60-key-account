@@ -1,0 +1,7 @@
+public Boolean isKeyAccount(Account a) {
+    //code here
+    return (a.AnnualRevenue >=500000 && a.Industry != 'Banking' && a.Industry != 'Technology' && a.Industry != 'Retail' ) ||
+            (a.AnnualRevenue >=600000 && a.Industry == 'Banking') ||
+            (a.AnnualRevenue >=800000 && a.Industry == 'Technology') ||
+            (a.AnnualRevenue >=2000000 && a.Industry == 'Retail');
+}
