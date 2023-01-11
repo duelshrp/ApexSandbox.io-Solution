@@ -1,0 +1,4 @@
+public Boolean sameParent(Contact c, Opportunity opp) {
+    //code here
+    return c.AccountId == opp.AccountId;
+}
