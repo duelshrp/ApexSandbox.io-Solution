@@ -1,6 +1,6 @@
 public static Integer arraySum(List<Integer> numbers) {
     //code here
-    Integer sum = 0;
+    public Integer sum = 0;
     for(num : numbers){
         sum += num;
     }
