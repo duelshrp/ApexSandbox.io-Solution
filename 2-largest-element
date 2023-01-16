@@ -1,0 +1,8 @@
+public static Integer findLargest(List<Integer> nums) {
+	//code here
+    Integer largest= Integer.MIN_VALUE;
+    for(Integer num : nums){
+        if(num> largest) largest = num;
+    }
+    return largest;
+}
