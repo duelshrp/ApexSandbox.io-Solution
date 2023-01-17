@@ -3,6 +3,7 @@ public Integer secondLargest(List<Integer> numbers) {
     Integer first =-2147483647 - 1, second =-2147483647 - 1;
     for(Integer num : numbers){
         if(num > first) {second = first; first = num;}
+        else if(num < first && num > second){second = num;}
     }
     return second;
 }
