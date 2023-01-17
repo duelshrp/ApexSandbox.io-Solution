@@ -3,7 +3,7 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> ans = new List<Integer>();
     ans.add(1);
     if(n == 1) return ans;
-    ans. add(1);
+    ans.add(1);
     if(n == 2) return ans;
     for(Integer i=3; i <=n; i++){
         ans.add(ans.get(i-1) + ans.get(i-2));
