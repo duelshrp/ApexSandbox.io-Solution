@@ -1,14 +1,11 @@
 public boolean isSorted(List<Integer> numbers) {
     //code here
-    boolean desc = true;
-    boolean asc = true;
+    boolean desc = true, asc = true;
     for(Integer i=0; i<numbers.size()-1; i++){
-        if(numbers.get(i) >= numbers.get(i+1)) continue;
-        else {desc = false; break;}
+        if(numbers.get(i) > numbers.get(i+1)){ asc = false; break;}
     }
     for(Integer i=0; i<numbers.size()-1; i++){
-        if(numbers.get(i) <= numbers.get(i+1)) continue;
-        else {asc = false; break;}
+        if(numbers.get(i) < numbers.get(i+1)){ desc = false; break;}
     }
-    return (asc || desc);
+    return asc || desc;
 }
