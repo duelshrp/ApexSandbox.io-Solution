@@ -1,0 +1,13 @@
+public boolean isSorted(List<Integer> numbers) {
+    //code here
+    Boolean desc = true, asc = true;
+    for(Integer i=0; i<numbers.size()-1; i++){
+        if(numbers.get(i) >= numbers.get(i+1)) continue;
+        desc = false;
+    }
+    for(Integer i=0; i<numbers.size()-1; i++){
+        if(numbers.get(i) <= numbers.get(i+1)) continue;
+        asc = false;
+    }
+    return asc || desc;
+}
