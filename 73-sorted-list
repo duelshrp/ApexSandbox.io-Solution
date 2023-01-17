@@ -10,5 +10,5 @@ public boolean isSorted(List<Integer> numbers) {
         if(numbers.get(i) <= numbers.get(i+1)) continue;
         else {asc = false; break;}
     }
-    return asc || desc;
+    return (asc || desc);
 }
