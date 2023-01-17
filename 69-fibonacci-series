@@ -1,5 +1,4 @@
 public List<Integer> fibonacciSeries(Integer n) {
-    Integer i=2;
     List<Integer> ans = new List<Integer>();
     ans.add(1);
     if(n == 1) return ans;
