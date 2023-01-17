@@ -9,6 +9,6 @@ public Integer maxConsecutiveOnes(Integer[] numbers) {
         }
         curr ++;
     }
-    if(curr > max) maz = curr;
+    if(curr > max) max = curr;
     return max;
 }
