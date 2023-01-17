@@ -1,0 +1,14 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+    //code here
+    Integer max =0, curr =0;
+    for(Integer num : numbers){
+        if(num == 0){
+            if(curr > max) max = curr;
+            curr =0;
+            continue;
+        }
+        curr ++;
+    }
+    if(curr > max) maz = curr;
+    return max;
+}
