@@ -1,11 +1,11 @@
 public Boolean companionPlants(List<String> plants) {
     //code here
     for(Integer i=0; i<plants.size()-1; i++){
-        if((plants.get(i) == 'lettuce' && (platns.get(i+1) == 'cucumbers' || platns.get(i+1) == 'onions')) ||
-            (plants.get(i) == 'cucumbers' && (platns.get(i+1) == 'lettuce')) ||
-            (plants.get(i) == 'onions' && (platns.get(i+1) == 'lettuce' || platns.get(i+1) == 'tomatoes' || platns.get(i+1) == 'carrots')) ||
-            (plants.get(i) == 'tomatoes' && (platns.get(i+1) == 'onions')) ||
-            (plants.get(i) == 'carrots' && (platns.get(i+1) == 'onions'))) continue;
+        if((plants.get(i) == 'lettuce' && (plants.get(i+1) == 'cucumbers' || plants.get(i+1) == 'onions')) ||
+            (plants.get(i) == 'cucumbers' && (plants.get(i+1) == 'lettuce')) ||
+            (plants.get(i) == 'onions' && (plants.get(i+1) == 'lettuce' || plants.get(i+1) == 'tomatoes' || plants.get(i+1) == 'carrots')) ||
+            (plants.get(i) == 'tomatoes' && (plants.get(i+1) == 'onions')) ||
+            (plants.get(i) == 'carrots' && (plants.get(i+1) == 'onions'))) continue;
         return false;
     }
     return true;
