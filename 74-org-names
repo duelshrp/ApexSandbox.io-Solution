@@ -1,6 +1,6 @@
 public List<String> orgNames(List<String> adjectives, List<String> animals) {
     //code here
-    List<Stgring> ans = new List<String>();
+    List<String> ans = new List<String>();
     for(String adj : adjectives){
         for(String ani : animals){
             ans.add(adj + '-' + ani)
