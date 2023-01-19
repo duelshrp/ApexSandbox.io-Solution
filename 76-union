@@ -1,0 +1,9 @@
+public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
+    //code here
+
+    Set<Integer> returnSet = new Set<Integer>();
+    returnSet.addAll(set1);
+    returnSet.addAll(set2);
+
+    return returnSet;
+}
