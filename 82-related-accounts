@@ -4,5 +4,5 @@ public Set<Id> accountIds(List<Opportunity> opps) {
     for(Opportunity opp : opps){
         returnSet.add(opp.Id);
     }
-    reutrn returnSet;
+    return returnSet;
 }
