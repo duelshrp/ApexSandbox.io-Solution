@@ -1,6 +1,6 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
-    Set<Id> returnSet = new Set<Id>();
+    Set<Id> returnSet = new returnSet Set<Id>();
     for(Opportunity opp : opps){
         returnSet.add(opp.Id);
     }
