@@ -4,7 +4,9 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     for(Case c : cases){
         if(c.Type != null){
             if(mp.containsKey(c.Type)) mp.get(c.Type).add(c);
-            else{ mp.put(c.Type, new List{c});}
+            else{ 
+                mp.put(c.Type, new List<Case>{c});
+            }
         }
     }
     return mp;
