@@ -1,12 +1,14 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
     //code here
     Map<String, Decimal> industrySummary = new Map<String, Decimal>();
-    Decimal banking = 0, retail =0;
+    Decimal banking = 0, retail =0, technology=0;
     for(Account acc : accounts){
         if(acc.Industry == 'Banking') banking += acc.AnnualRevenue;
         if(acc.Industry == 'Retail') retail += acc.AnnualRevenue;
+        if(acc.Industry == 'Technology') retail += acc.AnnualRevenue;
     }
     industrySummary.put('Banking', banking);
     industrySummary.put('Retail', retail);
+    industrySummary.put('Technology', technology);
     return industrySummary;
 }
