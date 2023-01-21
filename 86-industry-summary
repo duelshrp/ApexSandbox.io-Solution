@@ -13,6 +13,9 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
 
     for(Account acc : accounts){
         if(industrySummary.containsKey(acc.Industry)) industrySummary.put(acc.Industry, industrySummary.get(acc.Industry) + acc.AnnualRevenue);
+        else{
+            industrySummary.put(acc.Industry, acc.AnnualRevenue);
+        }
     }
     return industrySummary;
 }
