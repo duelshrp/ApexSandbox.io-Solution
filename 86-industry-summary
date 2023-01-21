@@ -7,6 +7,6 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
         if(acc.Industry == 'Retail') retail += acc.AnnualRevenue;
     }
     industrySummary.put('Banking', banking);
-    industrySummary.put('Retail', ratail);
+    industrySummary.put('Retail', retail);
     return industrySummary;
 }
