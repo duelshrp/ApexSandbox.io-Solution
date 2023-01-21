@@ -1,12 +1,15 @@
 public Map<String, List<Case>> casesByType(List<Case> cases) {
     //code here
     Map<String, List<Case>> mp = new Map<String, List<Case>>();
-    for(Case cs : cases){
-        if(cs.Type != null){
-            if(mp.containsKey(cs.Type)){
-                mp.get(cs.Type).add(cs);
+
+    for(Case c : cases){
+        if(c.Type != null){
+            if(mp.containsKey(c.Type)){
+                mp.get(c.Type).add(c);
             }else{
-                mp.put(cs.Type, new List{cs});
+                List<Case> caseList = new List<Case>();
+                caseList.add(c)
+                mp.put(c.Type, caseList);
             }
         }
     }
